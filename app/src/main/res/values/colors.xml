@@ -15,6 +15,7 @@
     <color name="color_background_yellow">#f9db3d</color>
 
     <color name="color_crypto_white">#f1f1f9</color>
+    <color name="color_crypto_grey">#777b87</color>
     <color name="color_crypto_red">#fa455e</color>
     <color name="color_crypto_green">#14cb82</color>
     <color name="color_crypto_yellow">#9d9770</color>

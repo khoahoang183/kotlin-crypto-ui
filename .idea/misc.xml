@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/admin/AndroidStudioProjects/HKCryptoApp/app/src/main/res/layout/activity_main.xml" value="0.340625" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/HKCryptoApp/app/src/main/res/drawable/drawable_home_list.xml" value="0.2989583333333333" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/HKCryptoApp/app/src/main/res/drawable/drawable_homepage_cell_profit.xml" value="0.3151041666666667" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/HKCryptoApp/app/src/main/res/drawable/drawable_homepage_cell_x.xml" value="0.3151041666666667" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/HKCryptoApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/HKCryptoApp/app/src/main/res/layout/cell_hompage_crypto.xml" value="0.67" />
       </map>
     </option>
   </component>
