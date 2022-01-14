@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".mainscreen.MainScreenActivity"
     android:background="@color/color_background_black">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -13,7 +13,194 @@
         android:layout_height="150dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/drawable_home_list_2"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/ic_search_category_default" />
+
+            <EditText
+                android:id="@+id/edtSearch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/drawable_home_list"
+                android:drawableStart="@color/color_background_black_2"
+                android:hint="Search Coin Pairs"
+                android:textColorHint="@color/color_crypto_grey"
+                android:textSize="@dimen/text_12"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true">
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/imgFun1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:lottie_rawRes="@raw/raw_buycrypto"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"/>
+                <TextView
+                    android:id="@+id/tvFun1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buy"
+                    android:textSize="@dimen/text_12"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toStartOf="@+id/tvFun2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgFun1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true">>
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/imgFun2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:lottie_rawRes="@raw/raw_deposit"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"/>
+                <TextView
+                    android:id="@+id/tvFun2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deposit"
+                    android:textSize="@dimen/text_12"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toStartOf="@+id/tvFun2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgFun1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true">>
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/imgFun3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:lottie_rawRes="@raw/raw_launchpad_2"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"/>
+                <TextView
+                    android:id="@+id/tvFun3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Referral"
+                    android:textSize="@dimen/text_12"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toStartOf="@+id/tvFun2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgFun1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true">>
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/imgFun4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:lottie_rawRes="@raw/raw_profit"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"/>
+                <TextView
+                    android:id="@+id/tvFun4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Launchpad"
+                    android:textSize="@dimen/text_12"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toStartOf="@+id/tvFun2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgFun1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true">>
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/imgFun5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:lottie_rawRes="@raw/raw_more"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"/>
+                <TextView
+                    android:id="@+id/tvFun5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="More"
+                    android:textSize="@dimen/text_12"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toStartOf="@+id/tvFun2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgFun1" />
+            </LinearLayout>
+
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

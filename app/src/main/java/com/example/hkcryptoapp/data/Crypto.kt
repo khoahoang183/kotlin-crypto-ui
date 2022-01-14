@@ -1,4 +1,6 @@
-package com.example.hkcryptoapp
+package com.example.hkcryptoapp.data
+
+import java.io.Serializable
 
 data class Crypto(
     var name: String = "",
@@ -6,4 +8,4 @@ data class Crypto(
     var price: Float = 0F,
     var x: Int = 0,
     var profit: Float = 0F
-)
+):Serializable
