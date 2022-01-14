@@ -52,7 +52,7 @@ class ListCryptoHolder(var view: CellHompageCryptoBinding) : RecyclerView.ViewHo
         view.tvName.text = item.name
         view.tvVolume.text = "Vol ${item.volume} M "
         view.tvPrice1.text = if (item.price >=0) String.format("%.2f", item.price) else "0.00"
-        view.tvPrice2.text = if (item.price >=0) "${item.price}" else "0.00"
+        view.tvPrice2.text = if (item.price >=0) String.format("%.5f", item.price) else "0.00"
 
         view.tvProfit.text = String.format("%.2f", item.profit) + "%"
         if (item.profit > 0F) {
